@@ -222,3 +222,16 @@ body {
     top: 82px;
   }
 }
+
+* {
+  color: white;
+  font-family: Swell, sans-serif;
+  font-weight: 400;
+}
+
+.contenedor {
+  width: 95%;
+  margin: auto;
+  border: 3px solid white;
+  padding: 10px;
+}
