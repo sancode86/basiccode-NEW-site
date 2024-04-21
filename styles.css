@@ -128,16 +128,17 @@ body {
 }
 
 
-h1 {
+h1,
+span {
   font-weight: 100;
   background-color: black;
   color: white;
   font-family: Swell, sans-serif;
   font-size: 52px;
+  padding: 0;
 }
 
 .content {
-  padding: 5%;
   text-align: center;
 }
 
@@ -235,3 +236,65 @@ body {
   border: 3px solid white;
   padding: 10px;
 }
+
+.contenedor-pregunta {
+  width: 95%;
+  padding: 10px;
+  margin: auto;
+}
+
+.pregunta {
+  background-color: white;
+  color: black;
+  display: flex;
+  border: 3px solid white;
+  padding: 10px 30px;
+  line-height: 0;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s all;
+}
+
+.pregunta > h2, span {
+  color: black;
+}
+
+.pregunta:hover {
+  cursor: pointer;
+  background-color: rgb(176, 176, 176);
+
+}
+.respuesta {
+  transition: 0.5s all;
+  padding: 10px;
+  line-height: 0;
+}
+
+.footer {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #262626;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #262626;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 0px none #ffffff;
+  }
